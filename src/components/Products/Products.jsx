@@ -1,5 +1,9 @@
 const Products = () => {
-  return <div>Products</div>;
-};
+  return (
+    <section id="catalog" className="section">
+      <div className="container">Products</div>
+    </section>
+  )
+}
 
-export default Products;
+export default Products

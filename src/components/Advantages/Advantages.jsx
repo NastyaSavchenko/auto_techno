@@ -1,5 +1,9 @@
 const Advantages = () => {
-  return <div>Advantages</div>;
-};
+  return (
+    <section id="about" className="section">
+      <div className="container">Advantages</div>
+    </section>
+  )
+}
 
-export default Advantages;
+export default Advantages

@@ -1,5 +1,9 @@
 const Delivery = () => {
-  return <div>Delivery</div>;
-};
+  return (
+    <section id="delivery" className="delivery">
+      <div className="container">Delivery</div>
+    </section>
+  )
+}
 
-export default Delivery;
+export default Delivery
