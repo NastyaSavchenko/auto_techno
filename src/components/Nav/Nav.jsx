@@ -12,10 +12,10 @@ const Nav = () => {
           <a href="#catalog">Каталог</a>
         </li>
         <li>
-          <a href="#order">Замовити</a>
+          <a href="#contacts">Замовити</a>
         </li>
         <li>
-          <a href="#contacts">Контакти</a>
+          <a href="#footer">Контакти</a>
         </li>
       </ul>
     </nav>

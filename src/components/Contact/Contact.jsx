@@ -1,5 +1,9 @@
 const Contact = () => {
-  return <div>Contact</div>;
-};
+  return (
+    <section id="contacts" className="contacts">
+      <div className="container">Contact</div>
+    </section>
+  )
+}
 
-export default Contact;
+export default Contact

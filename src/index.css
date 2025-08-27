@@ -21,4 +21,31 @@ body {
   font-size: 18px;
   font-weight: 400;
   line-height: 1.4;
+  margin: 0;
+}
+
+.section {
+  padding: 100px 0;
+}
+
+.brands {
+  padding: 240px 0;
+}
+
+.delivery {
+  padding: 100px 0 160px 0;
+  background-color: var(--bg-yellow);
+}
+
+.contacts {
+  padding: 100px 0 65px 0;
+}
+
+footer {
+  padding: 100px 0 40px 0;
+  background-color: var(--bg-brown);
+}
+
+.container {
+  margin: 0 144px;
 }

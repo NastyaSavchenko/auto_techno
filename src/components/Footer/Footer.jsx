@@ -7,13 +7,15 @@ import Copyright from '../Copyright/Copyright'
 
 const Footer = () => {
   return (
-    <footer>
-      <Logo />
-      <CallUs />
-      <Nav />
-      <WorkingHours />
-      <Socials />
-      <Copyright />
+    <footer id="footer">
+      <div className="container">
+        <Logo />
+        <CallUs />
+        <Nav />
+        <WorkingHours />
+        <Socials />
+        <Copyright />
+      </div>
     </footer>
   )
 }

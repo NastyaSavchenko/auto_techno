@@ -1,5 +1,9 @@
 const Brands = () => {
-  return <div>Brands</div>;
-};
+  return (
+    <section id="brands" className="brands">
+      <div className="container">Brands</div>;
+    </section>
+  )
+}
 
-export default Brands;
+export default Brands
