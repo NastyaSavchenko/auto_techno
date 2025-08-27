@@ -16,8 +16,10 @@ const Nav = ({ location }) => {
     <nav>
       <ul className={location === 'header' ? s.mainNav : s.footerNav}>
         {links.map((item) => (
-          <li key={item.href}>
-            <a href={`#${item.href}`}>{item.text}</a>
+          <li key={item.href} className={s.navItem}>
+            <a href={`#${item.href}`} className={s.link}>
+              {item.text}
+            </a>
           </li>
         ))}
       </ul>

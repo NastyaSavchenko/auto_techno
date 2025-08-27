@@ -6,13 +6,14 @@ import s from './Header.module.css'
 
 const Header = () => {
   return (
-    <header className="container">
-      <div className={s.header}>
-        <Logo location={'header'} />
-        <Nav location={'header'} />
-        <div>
-          <a href="tel:+380666730545">
-            <Phone />
+    <header className={s.headerWrap}>
+      <div className="container">
+        <div className={s.header}>
+          <Logo location={'header'} />
+          <Nav location={'header'} />
+
+          <a href="tel:+380666730545" className={s.callUs}>
+            <Phone className={s.icon} />
             +38 066 673 05 45
           </a>
         </div>
