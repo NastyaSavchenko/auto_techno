@@ -1,0 +1,14 @@
+.mainNav {
+  display: flex;
+  gap: 40px;
+
+  font-weight: 500;
+  line-height: normal;
+}
+
+.footerNav {
+  color: var(--white);
+
+  font-weight: 500;
+  line-height: normal;
+}
