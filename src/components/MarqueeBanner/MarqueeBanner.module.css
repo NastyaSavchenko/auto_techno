@@ -1,6 +1,7 @@
 .wrapper {
   display: flex;
   align-items: center;
+  padding: 48px 0;
 }
 
 .line {
