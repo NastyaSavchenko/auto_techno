@@ -5,6 +5,8 @@ import icon3 from '../../assets/icons/icon3.svg'
 import icon4 from '../../assets/icons/icon4.svg'
 import icon5 from '../../assets/icons/icon5.svg'
 
+import s from './Advantages.module.css'
+
 const ITEMS = [
   {
     id: '1',
@@ -40,7 +42,7 @@ const ITEMS = [
 
 const AdvantagesList = () => {
   return (
-    <ul>
+    <ul className={s.advantagesList}>
       {ITEMS.map((item) => (
         <AdvantagesCard
           key={item.id}

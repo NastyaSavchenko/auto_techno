@@ -15,6 +15,17 @@
   mix-blend-mode: darken;
 }
 
+.hero::before {
+  content: '';
+  position: absolute;
+  left: -976px;
+  bottom: 0;
+  width: 1784px;
+  height: 128px;
+  background: url('../../assets/img/bg/LightYellowBg.png') no-repeat;
+  mix-blend-mode: darken;
+}
+
 .textWrap {
   padding-top: 139px;
   padding-left: 144px;

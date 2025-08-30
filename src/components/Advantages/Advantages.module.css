@@ -1,3 +1,51 @@
 .advantages {
   background-color: var(--brand-accent);
+  position: relative;
+}
+
+.advantages::before {
+  content: '';
+  position: absolute;
+  left: 5px;
+  bottom: 180px;
+  width: 476px;
+  height: 476px;
+  opacity: 0.2;
+  mix-blend-mode: hard-light;
+  background: url('../../assets/img/bg/advBg.png') no-repeat center;
+}
+
+.advantagesList {
+  display: flex;
+  justify-content: center;
+  gap: 48px;
+  align-self: stretch;
+  flex-wrap: wrap;
+}
+
+.advantagesItem {
+  display: flex;
+  width: 342px;
+  height: 300px;
+  padding: 24px;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+
+  background: var(--white);
+  box-shadow: 12px 12px 0 0 var(--brand-orange);
+  z-index: 1;
+}
+
+.title {
+  text-align: center;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: -0.48px;
+  margin-bottom: 8px;
+}
+
+.text {
+  text-align: center;
 }
