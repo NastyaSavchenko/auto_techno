@@ -1,0 +1,46 @@
+.wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.line {
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: -0.8px;
+  text-transform: uppercase;
+  display: inline-flex;
+  align-items: center;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.separator {
+  position: relative;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background: var(--brand-accent);
+  margin: 0 60px;
+  vertical-align: middle;
+}
+
+.separator::before,
+.separator::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  width: 20px;
+  height: 20px;
+  background: var(--brand-accent);
+}
+
+.separator::before {
+  left: -32px;
+}
+
+.separator::after {
+  right: -32px;
+}
