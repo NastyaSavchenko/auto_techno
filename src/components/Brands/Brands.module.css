@@ -1,0 +1,93 @@
+.brands {
+  position: relative;
+  overflow: hidden;
+}
+
+.brands::before {
+  content: '';
+  position: absolute;
+  top: -14px;
+  left: -144px;
+  width: 1800px;
+  height: 1004px;
+  background: url('/src/assets/img/bg/OrangeBG.png') center/cover no-repeat;
+  z-index: -1;
+  pointer-events: none;
+}
+
+.brands::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0;
+  width: 1800px;
+  height: 1004px;
+  background: url('/src/assets/img/bg/YellowBG.png') center/contain no-repeat;
+  z-index: -1;
+  pointer-events: none;
+}
+.sliderWrap {
+  position: relative;
+}
+
+.slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  max-width: 120px;
+  max-height: 60px;
+  object-fit: contain;
+}
+
+.navBtn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  width: 44px;
+  height: 44px;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+  opacity: 0.6;
+}
+
+.navBtn img {
+  width: 20px;
+  height: 20px;
+}
+
+.prevBtn {
+  left: -60px;
+}
+
+.nextBtn {
+  right: -60px;
+}
+
+@media (max-width: 1024px) {
+  .prevBtn {
+    left: -24px;
+  }
+  .nextBtn {
+    right: -24px;
+  }
+}
+@media (max-width: 640px) {
+  .prevBtn,
+  .nextBtn {
+    top: calc(50% - 12px);
+    width: 36px;
+    height: 36px;
+  }
+  .prevBtn {
+    left: -12px;
+  }
+  .nextBtn {
+    right: -12px;
+  }
+}
