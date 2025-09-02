@@ -17,7 +17,7 @@ const Brands = () => {
   const nextRef = useRef(null)
 
   return (
-    <section id="brands" className={`${s.brands}+ ' section'}`}>
+    <section id="brands" className={s.brands + ' brands'}>
       <div className="container">
         <SectionTitle text="Наші бренди" />
 
@@ -43,7 +43,7 @@ const Brands = () => {
             slidesPerView={5}
             grid={{ rows: 3, fill: 'row' }}
             spaceBetween={24}
-            // autoplay={{ delay: 2000, disableOnInteraction: false }}
+            autoplay={{ delay: 2000, disableOnInteraction: false }}
             rewind={true}
             onBeforeInit={(swiper) => {
               swiper.params.navigation.prevEl = prevRef.current

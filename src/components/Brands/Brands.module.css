@@ -1,3 +1,32 @@
+.brands {
+  position: relative;
+  overflow: hidden;
+}
+
+.brands::before {
+  content: '';
+  position: absolute;
+  top: -14px;
+  left: -144px;
+  width: 1800px;
+  height: 1004px;
+  background: url('/src/assets/img/bg/OrangeBG.png') center/cover no-repeat;
+  z-index: -1;
+  pointer-events: none;
+}
+
+.brands::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0;
+  width: 1800px;
+  height: 1004px;
+  background: url('/src/assets/img/bg/YellowBG.png') center/contain no-repeat;
+  z-index: -1;
+  pointer-events: none;
+}
 .sliderWrap {
   position: relative;
 }
@@ -24,6 +53,7 @@
   display: grid;
   place-items: center;
   cursor: pointer;
+  opacity: 0.6;
 }
 
 .navBtn img {
